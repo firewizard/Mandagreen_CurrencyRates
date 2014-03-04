@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Mandagreen_CurrencyRates>
+            <version>1.0.0</version>
+            <depends>
+                <Mage_Directory />
+            </depends>
+        </Mandagreen_CurrencyRates>
+    </modules>
+
+    <global>
+        <currency>
+            <import>
+                <services>
+                    <openexchange>
+                        <name>Open Exchange</name>
+                        <model>mg_currencyrates/openexchange</model>
+                    </openexchange>
+                </services>
+            </import>
+        </currency>
+
+        <helpers>
+            <mg_currencyrates>
+                <class>Mandagreen_CurrencyRates_Helper</class>
+            </mg_currencyrates>
+        </helpers>
+
+        <models>
+            <mg_currencyrates>
+                <class>Mandagreen_CurrencyRates_Model</class>
+            </mg_currencyrates>
+        </models>
+    </global>
+</config>

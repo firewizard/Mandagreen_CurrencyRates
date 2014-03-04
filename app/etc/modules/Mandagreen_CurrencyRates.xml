@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Mandagreen_CurrencyRates>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Mandagreen_CurrencyRates>
+    </modules>
+</config>
